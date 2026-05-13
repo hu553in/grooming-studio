@@ -1,0 +1,13 @@
+.github/
+.dockerignore
+.editorconfig
+.gitignore
+.prettierignore
+.prettierrc.json
+AGENTS.md
+Dockerfile
+eslint.config.js
+README.md
+lefthook.yml
+.stylelintignore
+.stylelintrc.json

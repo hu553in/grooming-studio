@@ -1,0 +1,66 @@
+{
+  "name": "grooming-studio",
+  "description": "Pet grooming studio website for a business in Omsk, Russia.",
+  "type": "module",
+  "pkg": {
+    "assets": [
+      "dist/spa/*"
+    ]
+  },
+  "scripts": {
+    "images:webp": "bash ./scripts/convert-images-to-webp.sh",
+    "build": "vite build",
+    "dev": "vite",
+    "test": "vitest run --passWithNoTests",
+    "check": "lefthook run check --all-files --force",
+    "check:fix": "lefthook run check-fix --all-files --force",
+    "prepare": "command -v lefthook && lefthook install || true"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "embla-carousel-react": "^8.6.0",
+    "lucide-react": "^1.14.0",
+    "photoswipe": "^5.4.4",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "react-router-dom": "^7.15.0",
+    "tailwind-merge": "^3.6.0",
+    "usehooks-ts": "^3.1.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@swc/core": "^1.15.33",
+    "@tailwindcss/postcss": "^4.3.0",
+    "@tailwindcss/typography": "^0.5.19",
+    "@types/node": "^25.7.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@types/yandex-metrika-tag": "^2.0.7",
+    "@typescript-eslint/eslint-plugin": "^8.59.3",
+    "@typescript-eslint/parser": "^8.59.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "autoprefixer": "^10.5.0",
+    "eslint": "^10.3.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.5.5",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-simple-import-sort": "^13.0.0",
+    "globals": "^17.6.0",
+    "lefthook": "^2.1.6",
+    "postcss": "^8.5.14",
+    "prettier": "^3.8.3",
+    "prettier-plugin-tailwindcss": "^0.8.0",
+    "sharp-cli": "^5.2.0",
+    "stylelint": "^17.11.0",
+    "stylelint-config-tailwindcss": "^1.0.1",
+    "tailwindcss": "^4.3.0",
+    "tsx": "^4.21.0",
+    "tw-animate-css": "^1.4.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.59.3",
+    "vite": "^8.0.12",
+    "vitest": "^4.1.6"
+  }
+}
