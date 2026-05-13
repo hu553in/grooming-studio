@@ -13,8 +13,7 @@ RUN --mount=type=cache,target=/var/cache/apt \
   --mount=type=cache,target=/var/lib/apt/lists \
   apt-get update && \
   apt-get install -y --no-install-recommends \
-  git && \
-  rm -rf /var/lib/apt/lists/*
+  git
 
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
 
