@@ -4,10 +4,16 @@
 .gitignore
 .prettierignore
 .prettierrc.json
+.DS_Store
+Thumbs.db
 AGENTS.md
+CLAUDE.md
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+LICENSE
+README.md
 Dockerfile
 eslint.config.js
-README.md
 lefthook.yml
 .stylelintignore
 .stylelintrc.json
