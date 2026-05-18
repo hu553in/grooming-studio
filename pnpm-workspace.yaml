@@ -3,3 +3,5 @@ allowBuilds:
   esbuild: true
   lefthook: true
   sharp: true
+overrides:
+  glob@>=11.0.0 <11.1.0: '>=11.1.0'
