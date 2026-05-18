@@ -4,8 +4,15 @@
 .gitignore
 .prettierignore
 .prettierrc.json
+node_modules/
+dist/
+build/
+out/
 .DS_Store
 Thumbs.db
+*.log
+*.tsbuildinfo
+.env*
 AGENTS.md
 CLAUDE.md
 CODE_OF_CONDUCT.md
