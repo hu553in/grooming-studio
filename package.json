@@ -19,7 +19,6 @@
   "dependencies": {
     "clsx": "^2.1.1",
     "embla-carousel-react": "^8.6.0",
-    "lucide-react": "^1.17.0",
     "photoswipe": "^5.4.4",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
