@@ -1,0 +1,84 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@theme inline {
+  --color-border: hsl(var(--border));
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+
+  --color-custom-blue: #aad5f2;
+  --color-custom-dark-blue: #0c1c40;
+  --color-custom-pink: #ffc0cd;
+  --color-custom-dark-pink: #dd7db4;
+  --color-custom-purple: #d0bcea;
+  --color-custom-coral: #f8dfde;
+
+  --font-sans: 'Montserrat Alternates', sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --border: 214.3 31.8% 91.4%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scrollbar-gutter: stable;
+    overflow-x: hidden;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    overflow-x: hidden;
+  }
+
+  @media (width <= 768px) {
+    * {
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #c4c4c4;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+  }
+}
+
+@utility scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@utility instagram {
+  &::after {
+    content: '*';
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    color: black;
+    background-color: transparent;
+    z-index: 100;
+  }
+}
