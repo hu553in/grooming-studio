@@ -17,6 +17,8 @@
     "prepare": "command -v lefthook && lefthook install || true"
   },
   "dependencies": {
+    "@commitlint/cli": "^21.0.2",
+    "@commitlint/config-conventional": "^21.0.2",
     "clsx": "^2.1.1",
     "embla-carousel-react": "^8.6.0",
     "photoswipe": "^5.4.4",
