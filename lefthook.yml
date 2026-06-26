@@ -43,7 +43,7 @@ check:
       run: pnpm exec stylelint "**/*.css" --max-warnings=0
 
     - name: svg-check
-      run:
+      run: >-
         bash -lc 'find client public -type f -name "*.svg" -print0 | xargs -0 -n 1 xmllint --noout'
 
     - name: typecheck
@@ -64,7 +64,7 @@ check-fix:
       run: pnpm exec stylelint "**/*.css" --max-warnings=0 --fix
 
     - name: svg-format
-      run:
+      run: >-
         bash -lc 'find client public -type f -name "*.svg" -print0 | xargs -0 -I {} xmllint --format
         "{}" -o "{}"'
 
