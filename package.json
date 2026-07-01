@@ -1,6 +1,6 @@
 {
   "name": "grooming-studio",
-  "description": "Pet grooming studio website for a business in Omsk, Russia.",
+  "description": "Website for a pet grooming studio in Omsk, Russia.",
   "type": "module",
   "pkg": {
     "assets": [
