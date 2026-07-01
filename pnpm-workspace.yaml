@@ -3,5 +3,7 @@ allowBuilds:
   esbuild: true
   lefthook: true
   sharp: true
+minimumReleaseAgeExclude:
+  - vite@8.1.2
 overrides:
   glob@>=11.0.0 <11.1.0: '>=11.1.0'
