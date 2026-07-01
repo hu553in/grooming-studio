@@ -11,12 +11,6 @@ importers:
 
   .:
     dependencies:
-      '@commitlint/cli':
-        specifier: ^21.2.0
-        version: 21.2.0(@types/node@26.0.1)(typescript@6.0.3)
-      '@commitlint/config-conventional':
-        specifier: ^21.2.0
-        version: 21.2.0
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -42,6 +36,12 @@ importers:
         specifier: ^3.1.1
         version: 3.1.1(react@19.2.7)
     devDependencies:
+      '@commitlint/cli':
+        specifier: ^21.2.0
+        version: 21.2.0(@types/node@26.0.1)(typescript@6.0.3)
+      '@commitlint/config-conventional':
+        specifier: ^21.2.0
+        version: 21.2.0
       '@eslint/js':
         specifier: ^10.0.1
         version: 10.0.1(eslint@10.6.0(jiti@2.7.0))
