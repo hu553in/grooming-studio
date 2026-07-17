@@ -20,7 +20,7 @@ COPY . .
 
 RUN bun run build
 
-FROM nginxinc/nginx-unprivileged:1.31.2-alpine AS runner
+FROM nginxinc/nginx-unprivileged:1.31.3-alpine AS runner
 
 USER root
 RUN apk upgrade --no-cache
