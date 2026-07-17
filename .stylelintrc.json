@@ -1,7 +1,10 @@
 {
-  "extends": ["stylelint-config-tailwindcss"],
+  "extends": ["stylelint-config-recommended", "stylelint-config-tailwindcss"],
   "reportDescriptionlessDisables": true,
   "reportInvalidScopeDisables": true,
   "reportNeedlessDisables": true,
-  "reportUnscopedDisables": true
+  "reportUnscopedDisables": true,
+  "rules": {
+    "nesting-selector-no-missing-scoping-root": [true, { "ignoreAtRules": ["utility"] }]
+  }
 }

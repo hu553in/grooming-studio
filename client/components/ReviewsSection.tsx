@@ -1,6 +1,6 @@
 import { useScript } from 'usehooks-ts';
 
-import { useMetrika } from '@/components/MetrikaProvider';
+import { useMetrika } from '@/components/MetrikaContext';
 import { cn } from '@/lib/utils';
 
 export default function ReviewsSection() {

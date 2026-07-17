@@ -1,5 +1,5 @@
 import Map2GIS from '@/components/Map2GIS';
-import { useMetrika } from '@/components/MetrikaProvider';
+import { useMetrika } from '@/components/MetrikaContext';
 import { cn } from '@/lib/utils';
 
 function SocialIcon({
