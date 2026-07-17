@@ -29,7 +29,7 @@
     "moduleDetection": "force",
     "moduleResolution": "Bundler",
     "useDefineForClassFields": true,
-    "incremental": true,
+    "incremental": false,
     "paths": {
       "@/*": ["./client/*"],
       "@shared/*": ["./shared/*"]
@@ -39,8 +39,14 @@
     "noEmit": true,
     "verbatimModuleSyntax": true,
     "jsx": "react-jsx",
-    "allowJs": true
+    "allowJs": false
   },
-  "include": ["client/**/*", "shared/**/*", "commitlint.config.ts", "vite.config.ts"],
+  "include": [
+    "client/**/*",
+    "shared/**/*",
+    "eslint.config.ts",
+    "postcss.config.ts",
+    "vite.config.ts"
+  ],
   "exclude": ["node_modules"]
 }

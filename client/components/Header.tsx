@@ -1,6 +1,6 @@
 import { type ButtonHTMLAttributes, useCallback, useEffect, useState } from 'react';
 
-import { useMetrika } from '@/components/MetrikaProvider';
+import { useMetrika } from '@/components/MetrikaContext';
 import { useHash } from '@/hooks/use-hash';
 import { cn } from '@/lib/utils';
 

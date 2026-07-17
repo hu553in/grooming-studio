@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo } from 'react';
 import { useDocumentTitle } from 'usehooks-ts';
 
-import { useMetrika } from '@/components/MetrikaProvider';
+import { useMetrika } from '@/components/MetrikaContext';
 import { cn } from '@/lib/utils';
 
 export interface Service {

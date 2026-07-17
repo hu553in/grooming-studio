@@ -1,19 +1,13 @@
-import React, { createContext, useContext, useMemo } from 'react';
+import { type ReactNode, useMemo } from 'react';
 
-interface MetrikaAPI {
-  hit: (opts?: ym.HitOptions<unknown>) => void;
-  reachGoal: (opts?: ym.VisitParameters) => void;
-  extLink: (url: string, opts?: ym.ExtLinkOptions<unknown>) => void;
-}
-
-const MetrikaCtx = createContext<MetrikaAPI | null>(null);
+import { type MetrikaAPI, MetrikaContext } from '@/components/MetrikaContext';
 
 export function MetrikaProvider({
   counterId,
   children,
 }: {
   counterId: number;
-  children: React.ReactNode;
+  children: ReactNode;
 }) {
   const api = useMemo<MetrikaAPI>(() => {
     return {
@@ -31,11 +25,5 @@ export function MetrikaProvider({
     };
   }, [counterId]);
 
-  return <MetrikaCtx.Provider value={api}>{children}</MetrikaCtx.Provider>;
-}
-
-export function useMetrika() {
-  const ctx = useContext(MetrikaCtx);
-  if (!ctx) throw new Error('useMetrika must be used within <MetrikaProvider>');
-  return ctx;
+  return <MetrikaContext.Provider value={api}>{children}</MetrikaContext.Provider>;
 }
