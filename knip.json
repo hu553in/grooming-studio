@@ -1,5 +1,5 @@
 {
   "$schema": "./node_modules/knip/schema.json",
   "entry": ["public/scripts/2gis-map.js", "public/scripts/2gis-reviews.js"],
-  "ignoreDependencies": ["@commitlint/cli"]
+  "ignoreDependencies": ["@commitlint/cli", "renovate"]
 }

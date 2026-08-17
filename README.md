@@ -13,7 +13,7 @@ Website for [a pet grooming studio](https://пес-ты-вымыт.рф) in Omsk
 
 ## Requirements
 
-- Bun 1.3.14 for local development
+- Bun for local development
 - Docker for image builds
 
 ## Setup
