@@ -12,25 +12,5 @@ jobs:
     permissions:
       contents: read
     uses: hu553in/common-things/.github/workflows/check-bun.yml@main
-
-  docker:
-    permissions:
-      contents: read
-    uses: hu553in/common-things/.github/workflows/check-docker.yml@main
     with:
-      build_args: |
-        API_BASE_URL=${{ vars.API_BASE_URL }}
-
-  publish:
-    needs: [check, docker]
-    if: github.ref == 'refs/heads/main'
-    uses: hu553in/common-things/.github/workflows/build-publish-attest-docker.yml@main
-    permissions:
-      contents: read
-      packages: write
-      id-token: write
-      attestations: write
-    with:
-      image: ghcr.io/${{ github.repository }}
-      build_args: |
-        API_BASE_URL=${{ vars.API_BASE_URL }}
+      cache_eslint: true

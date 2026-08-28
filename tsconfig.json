@@ -31,8 +31,7 @@
     "useDefineForClassFields": true,
     "incremental": false,
     "paths": {
-      "@/*": ["./client/*"],
-      "@shared/*": ["./shared/*"]
+      "@/*": ["./client/*"]
     },
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -41,12 +40,6 @@
     "jsx": "react-jsx",
     "allowJs": false
   },
-  "include": [
-    "client/**/*",
-    "shared/**/*",
-    "eslint.config.ts",
-    "postcss.config.ts",
-    "vite.config.ts"
-  ],
+  "include": ["client/**/*", "eslint.config.ts", "postcss.config.ts", "vite.config.ts"],
   "exclude": ["node_modules"]
 }

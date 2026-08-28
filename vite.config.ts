@@ -1,14 +1,10 @@
 import react from '@vitejs/plugin-react';
-import { searchForWorkspaceRoot } from 'vite';
 import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
   plugins: [react()],
   resolve: {
     tsconfigPaths: true,
-  },
-  build: {
-    outDir: 'dist/spa',
   },
   test: {
     coverage: {
@@ -21,14 +17,6 @@ export default defineConfig({
         functions: 100,
         lines: 100,
       },
-    },
-  },
-  server: {
-    host: '::',
-    port: 8080,
-    fs: {
-      allow: [searchForWorkspaceRoot(process.cwd()), './client', './shared'],
-      deny: ['.env', '.env.*', '*.{crt,pem}', '**/.git/**'],
     },
   },
 });
