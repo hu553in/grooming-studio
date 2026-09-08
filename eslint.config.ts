@@ -1,5 +1,4 @@
 import js from '@eslint/js';
-import vitest from '@vitest/eslint-plugin';
 import { defineConfig, globalIgnores } from 'eslint/config';
 import eslintConfigPrettier from 'eslint-config-prettier/flat';
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
@@ -86,10 +85,6 @@ export default defineConfig(
     languageOptions: {
       globals: globals.browser,
     },
-  },
-  {
-    files: ['**/*.{test,spec}.{ts,tsx,mts,cts}'],
-    extends: [vitest.configs.recommended],
   },
   {
     files: ['*.config.{js,ts}'],
