@@ -5,6 +5,7 @@
   "reportNeedlessDisables": true,
   "reportUnscopedDisables": true,
   "rules": {
+    "at-rule-prelude-no-invalid": [true, { "ignoreAtRules": ["apply"] }],
     "nesting-selector-no-missing-scoping-root": [true, { "ignoreAtRules": ["utility"] }]
   }
 }
