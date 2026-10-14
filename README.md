@@ -17,7 +17,7 @@ Website for [a pet grooming studio](https://пес-ты-вымыт.рф) in Omsk
 ## Setup
 
 ```bash
-bun i
+bun ci
 bun dev
 ```
 

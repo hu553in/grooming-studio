@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "types": ["yandex-metrika-tag"],
     "target": "ESNext",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "skipLibCheck": true,
@@ -25,6 +24,7 @@
     "exactOptionalPropertyTypes": true,
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
+    "types": ["yandex-metrika-tag"],
     "module": "ESNext",
     "moduleDetection": "force",
     "moduleResolution": "Bundler",
