@@ -13,5 +13,5 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://пес-ты-вымыт.рф/sitemap.xml
-Host: пес-ты-вымыт.рф
+Sitemap: https://grooming-studio-hu553in.vercel.app/sitemap.xml
+Host: grooming-studio-hu553in.vercel.app

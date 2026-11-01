@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/hu553in/grooming-studio/actions/workflows/ci.yml/badge.svg)](https://github.com/hu553in/grooming-studio/actions/workflows/ci.yml)
 
-Website for [a pet grooming studio](https://пес-ты-вымыт.рф) in Omsk, Russia.
+Website for [a pet grooming studio](https://grooming-studio-hu553in.vercel.app) in Omsk, Russia.
 
 ## What it does
 
