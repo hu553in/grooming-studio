@@ -32,7 +32,7 @@ Open <http://localhost:5173>.
 
 ```bash
 bun run build
-bun check
+bun check:all
 bun check:fix
 ```
 
@@ -42,4 +42,4 @@ bun check:fix
 
 - React, TypeScript
 - Tailwind CSS, Vite
-- ESLint, Prettier, Stylelint, Knip
+- ESLint, Stylelint, Knip
