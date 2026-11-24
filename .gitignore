@@ -1,9 +1,7 @@
 .DS_Store
 Thumbs.db
 node_modules/
-build/
 dist/
-out/
 .cache/
 .vscode/
 .idea/
@@ -13,4 +11,3 @@ out/
 .env*
 !.env.example
 !.env.example.*
-*.tsbuildinfo

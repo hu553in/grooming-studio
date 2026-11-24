@@ -1,12 +1,12 @@
 import js from '@eslint/js';
 import { defineConfig, globalIgnores } from 'eslint/config';
-import eslintConfigPrettier from 'eslint-config-prettier/flat';
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
 import reactPlugin from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import reactRefreshPlugin from 'eslint-plugin-react-refresh';
 import simpleImportSortPlugin from 'eslint-plugin-simple-import-sort';
 import globals from 'globals';
+import { version as reactVersion } from 'react';
 import tseslint from 'typescript-eslint';
 
 const reactRecommended = reactPlugin.configs.flat['recommended'];
@@ -109,9 +109,8 @@ export default defineConfig(
     },
     settings: {
       react: {
-        version: '19',
+        version: reactVersion,
       },
     },
-  },
-  eslintConfigPrettier
+  }
 );

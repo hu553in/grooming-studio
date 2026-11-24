@@ -31,10 +31,10 @@ Open <http://localhost:5173>.
 ## Development
 
 ```bash
-bun run build
 bun check:all
-bun check:fix
 ```
+
+Use `bun check:fix` to apply supported fixes before the full check.
 
 `bun run build` writes the production build to `dist/`.
 
